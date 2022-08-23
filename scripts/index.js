@@ -3,6 +3,7 @@ const { Main, Header } = await require("@bridge/ui")
 const { getDirectoryHandle, getFileHandle, writeJSON } = await require("@bridge/fs")
 const { getCurrentProject, resolvePackPath } = await require("@bridge/env")
 const { createError } = await require("@bridge/notification")
+const { compileFiles } = await require("@bridge/project")
 
 const icons = {
     "armor": "",
@@ -42,7 +43,41 @@ const icons = {
     "xbox_d_pad_up": "",
     "xbox_d_pad_right": "",
     "xbox_d_pad_down": "",
-    "xbox_d_pad_left": ""
+    "xbox_d_pad_left": "",
+
+    "switch_x": "",
+    "switch_a": "",
+    "switch_b": "",
+    "switch_y": "",
+    "switch_+": "",
+    "switch_-": "",
+    "switch_l": "",
+    "switch_r": "",
+    "switch_zl": "",
+    "switch_rl": "",
+    "switch_l": "",
+    "switch_r": "",
+    "switch_d_pad_up": "",
+    "switch_d_pad_right": "",
+    "switch_d_pad_down": "",
+    "switch_d_pad_left": "",
+
+    "ps_triangle": "",
+    "ps_circle": "",
+    "ps_cross": "",
+    "ps_square": "",
+    "ps_options": "",
+    "ps_touch_pad": "",
+    "ps_l1": "",
+    "ps_r1": "",
+    "ps_l2": "",
+    "ps_r2": "",
+    "ps_l3": "",
+    "ps_r3": "",
+    "ps_d_pad_up": "",
+    "ps_d_pad_right":"",
+    "ps_d_pad_down": "",
+    "ps_d_pad_left": ""
 }
 
 class MarkdownSidebar extends SidebarContent {
@@ -445,6 +480,7 @@ class MarkdownSidebar extends SidebarContent {
         })
 
         await writeJSON(await resolvePackPath('resourcePack', 'ui') + "/how_to_play_screen.json", output, true)
+        await compileFiles([await resolvePackPath('resourcePack', 'ui') + "/how_to_play_screen.json"])
     }
 }
 

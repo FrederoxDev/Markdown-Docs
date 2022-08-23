@@ -10,5 +10,24 @@
 		"Curated"
 	],
 	"target": "v2",
-	"icon": "mdi-book-open-outline"
+	"icon": "mdi-book-open-outline",
+	"contributeFiles": {
+		"contributeFiles/docs/guides": {
+			"path": "docs/guides"
+		},
+		"contributeFiles/docs/information": {
+			"path": "docs/information"
+		},
+		"contributeFiles/docs/config.json": {
+			"path": "docs/config.json"
+		},
+		"contributeFiles/bridge.png": {
+			"pack": "resourcePack",
+			"path": "textures/bridge.png"
+		},
+		"contributeFiles/how_to_play_common.json": {
+			"pack": "resourcePack",
+			"path": "ui/how_to_play_common.json"
+		}
+	}
 }
