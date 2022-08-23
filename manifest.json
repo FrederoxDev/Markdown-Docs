@@ -29,5 +29,8 @@
 			"pack": "resourcePack",
 			"path": "ui/how_to_play_common.json"
 		}
+	},
+	"compatibleAppVersions": {
+		"min": "2.3.2"
 	}
 }
