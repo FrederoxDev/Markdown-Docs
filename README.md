@@ -2,6 +2,8 @@
 
 An extension for [bridge editor](https://bridge-core.app) which makes creating docs in minecraft easier, by generating json-ui from markdown
 
+[View extension in bridge](https://nightly.bridge-core.app/?viewExtension=9c5bb3e6-1bc4-4453-9afe-a528e8d6e9d5)
+
 # Screenshots
 
 In Bridge             |  In Minecraft
